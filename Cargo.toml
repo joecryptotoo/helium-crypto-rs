@@ -47,7 +47,7 @@ uuid = { version = "1", features = ["v4", "fast-rng"], optional = true }
 [features]
 default = ["rsa"]
 ecc608 = ["ecc608-linux"]
-rppal = ["ecc608"]
+rppal = ["ecc608-linux/rppal"]
 rsa = ["dep:rsa", "byteorder"]
 tpm = ["tss2", "libc", "drop_guard"]
 nova-tz = ["rsa", "uuid"]
